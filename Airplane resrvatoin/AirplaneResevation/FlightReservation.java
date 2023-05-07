@@ -4,7 +4,7 @@ public class FlightReservation {
 
 private String departureCity;
 private  String arrivalCity ;
-private String SeatType ;
+private int SeatType ;
 private int departureTime ;
 private int departureDate; 
 private int arrivaltime ;
@@ -13,7 +13,7 @@ private boolean SeatConfirm;
 
  public FlightReservation()
 {
-  System.out.println("pleas enter the seat number");
+ 
 }
 
 
@@ -32,18 +32,6 @@ private boolean SeatConfirm;
     
     public String getArrivalCity() {
         return arrivalCity;
-    }
-
-
-    
-    public void setSeatType(String ST) {
-
-
-        this.SeatType = ST;
-    }
-    
-    public String getSeatType() {
-        return SeatType;
     }
 
 
@@ -95,6 +83,26 @@ private boolean SeatConfirm;
         return SeatConfirm;
     }
 
+  public void setSeatType(int count){
+    this.SeatType=count;
+  }
+
+ 
+public String SeatType( String nc){
+    
+    
+    System.out.println("pleas select 1 or 2 to choose ur class");
+   switch (this.SeatType){
+    case 1:
+            nc = "ecnomic class"; 
+            break;
+    case 2:
+             nc = "first class"; 
+            break;
+
+   }
+return nc;
+}
     
    
 }
