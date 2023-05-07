@@ -1,5 +1,5 @@
 package AirplaneResevation;
-public class passenger {
+public class Passenger {
 
 
  // كتبت كل المتغيرات 
